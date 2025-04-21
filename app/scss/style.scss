@@ -4,6 +4,41 @@
 @import 'fonts';
 
 // start header
+.header {
+  background-color: $background;
+  padding: 10px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: inline-block;
+
+  +.menu-list {
+    margin-left: 50px;
+  }
+}
+
+.header__contants{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.social__list {
+  display: inline-block;
+  +.social__list {
+    margin-left: 20px;
+  }
+}
 
 // end header
 
