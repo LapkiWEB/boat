@@ -1,4 +1,4 @@
-%Monts-Regular {
+%Monts-Black {
   font-family: 'Montserrat-Black', sans-serif;
   font-weight: normal;
   display: swap;
@@ -21,5 +21,10 @@
 
 $blue: #00FFFB;
 $white: #FFFFFF;
-$background: #1C3748;
+$background: #142936;
+
+@mixin screen-bg {
+  background: linear-gradient(180deg, rgba(28, 55, 72, 0) 28.17%, #1c3748 100%);
+}
+
 // $line: #BCB3A9;

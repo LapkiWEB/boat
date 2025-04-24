@@ -3,12 +3,34 @@ body {
   height: 100%;
   @extend %Monts-Light;
   //   color: $text;
-  // position: relative;
+  position: relative;
   // overflow-x: hidden;
-  // margin: 0 auto;
+  margin: 0 auto;
   font-size: 16px;
   color: $white;
   background-color: $background;
+}
+
+body.menu-opened {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+margin: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $background;
+  position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: $green;
+  background: $background;
+  border-radius: 5px;
+  border: 1px solid $blue;
+ 
 }
 
 .wrapper {
@@ -42,9 +64,17 @@ body {
 //     margin-bottom: 56px;
 //     max-width: fit-content;
 // }
-.global__btn{
-padding: 10px 33px;
-border: 1px solid $white;
-border-radius: 5px;
-background-color: rgba(74, 99, 133, 0.5);
+.global__btn {
+  padding: 10px 33px;
+  border: 1px solid $background;
+  border-radius: 5px;
+  background-color: $blue;
+  color: $background;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: all .3s;
+  &:hover{
+    background-color: $white;
+  }
 }
