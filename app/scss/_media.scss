@@ -15,7 +15,12 @@
   }
 }
 
-@media(max-width: 1300px) {}
+@media(max-width: 1300px) {
+  .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
 
 @media(max-width: 1200px) {
   .container {
@@ -87,6 +92,11 @@
     padding: 0 50px;
   }
 
+  .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
   .menu__btn {
     margin-left: 20px;
   }
@@ -105,6 +115,11 @@
 @media(max-width: 600px) {
   .container {
     padding: 0 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .header {

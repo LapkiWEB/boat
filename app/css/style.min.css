@@ -12,6 +12,12 @@ body {
   display: swap;
 }
 
+.title {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: normal;
+  display: swap;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -138,6 +144,18 @@ body.menu-opened {
   max-width: 1764px;
   margin: 0 auto;
   padding: 0 126px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.title {
+  font-size: 64px;
+  margin-bottom: 30px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .global__btn {
@@ -404,6 +422,12 @@ body.menu-opened {
     font-size: 80px;
   }
 }
+@media (max-width: 1300px) {
+  .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 1764px;
@@ -464,6 +488,10 @@ body.menu-opened {
   .container {
     padding: 0 50px;
   }
+  .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
   .menu__btn {
     margin-left: 20px;
   }
@@ -477,6 +505,10 @@ body.menu-opened {
 @media (max-width: 600px) {
   .container {
     padding: 0 20px;
+  }
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
   .header {
     top: 15px;
