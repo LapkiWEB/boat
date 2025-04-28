@@ -38,6 +38,15 @@
   .main-screen__title {
     font-size: 80px;
   }
+  .adv__inner{
+    flex-wrap: wrap;
+  }
+  .adv__item{
+    width: 100%;
+  }
+  .adv__item-title{
+    font-size: 24px;
+  }
 }
 
 @media(max-width: 1300px) {

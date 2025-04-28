@@ -266,4 +266,21 @@
 }
 // end section popular-ex
 
+// start section adv
+.adv__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.adv__item-title{
+  margin-bottom: 15px;
+  font-size: 32px;
+  @extend %Monts-Light;
+}
+.adv__item{
+  padding-left: 10px;
+  border-left: 1px solid $blue;
+}
+// end section adv
+
 @import 'media';
