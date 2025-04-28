@@ -317,7 +317,8 @@
   background-color: transparent;
   color: $white;
   border-color: $white;
-  &:hover{
+
+  &:hover {
     color: $background;
   }
 }
@@ -329,4 +330,30 @@
 
 // end section main-rent
 
+// start section included
+.included__inner {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.included__item {
+  max-width: 230px;
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.included__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.included-title{
+  font-size: 24px;
+}
+
+// end section included
 @import 'media';
