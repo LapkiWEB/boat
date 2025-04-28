@@ -139,34 +139,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header__contants {
   display: flex;
   justify-content: space-between;
@@ -236,5 +208,62 @@
 }
 
 // end section main-sreen
+
+// start section popular-ex
+.popular-ex__inner {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-ex__item {
+  width: 50%;
+}
+
+.popular-ex__item-img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.popular-ex__item-content__box--left {
+  padding-right: 50px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+
+.popular-ex__item-content-number {
+  font-size: 128px;
+  color: rgba(74, 99, 130, 0.5);
+  @extend %Monts-Black;
+}
+
+.popular-ex__item-content__box {
+  border-top: 1px solid $blue;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 71px;
+}
+
+.popular-ex__item-content__box-title {
+  @extend %Monts-Light;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.popular-ex__item-content__box-text {
+  margin-bottom: 30px;
+}
+
+.popular-ex__item-content--right{
+  margin-left: 20px;
+}
+
+.popular-ex__btn{
+  display: block;
+  margin: 0 auto;
+}
+// end section popular-ex
 
 @import 'media';

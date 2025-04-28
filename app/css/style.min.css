@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.main-screen__title {
+.popular-ex__item-content-number, .main-screen__title {
   font-family: "Montserrat-Black", sans-serif;
   font-weight: normal;
   display: swap;
 }
 
-html,
+.popular-ex__item-content__box-title, html,
 body {
   font-family: "Montserrat-Light", sans-serif;
   font-weight: normal;
@@ -171,6 +171,7 @@ body.menu-opened {
   z-index: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .global__btn:hover {
   background-color: #FFFFFF;
@@ -409,9 +410,91 @@ body.menu-opened {
   display: block;
 }
 
+.popular-ex__inner {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-ex__item {
+  width: 50%;
+}
+
+.popular-ex__item-img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.popular-ex__item-content__box--left {
+  padding-right: 50px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.popular-ex__item-content-number {
+  font-size: 128px;
+  color: rgba(74, 99, 130, 0.5);
+}
+
+.popular-ex__item-content__box {
+  border-top: 1px solid #00FFFB;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 71px;
+}
+
+.popular-ex__item-content__box-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.popular-ex__item-content__box-text {
+  margin-bottom: 30px;
+}
+
+.popular-ex__item-content--right {
+  margin-left: 20px;
+}
+
+.popular-ex__btn {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 1550px) {
   .main-screen__title {
     font-size: 100px;
+  }
+  .popular-ex__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .popular-ex__item-imeges {
+    width: 100%;
+  }
+  .popular-ex__item-imeges img {
+    width: 100%;
+  }
+  .popular-ex__item {
+    width: 100%;
+  }
+  .popular-ex__item-content__box {
+    margin-left: 0;
+  }
+  .popular-ex__item-images--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .popular-ex__item-imeges {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1350px) {
@@ -501,6 +584,12 @@ body.menu-opened {
   .nav.active .social {
     display: block;
   }
+  .popular-ex__item-content-number {
+    font-size: 96px;
+  }
+  .popular-ex__item-content__box-title {
+    font-size: 24px;
+  }
 }
 @media (max-width: 600px) {
   .container {
@@ -522,5 +611,8 @@ body.menu-opened {
   }
   .main-screen__title {
     font-size: 48px;
+  }
+  .popular-ex__item-content-number {
+    font-size: 64px;
   }
 }
