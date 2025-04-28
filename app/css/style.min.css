@@ -391,8 +391,8 @@ body.menu-opened {
   right: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(28.17%, rgba(28, 55, 72, 0)), to(#1c3748));
-  background: linear-gradient(180deg, rgba(28, 55, 72, 0) 28.17%, #1c3748 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(28.17%, rgba(20, 41, 54, 0)), to(#142936));
+  background: linear-gradient(180deg, rgba(20, 41, 54, 0) 28.17%, #142936 100%);
 }
 
 .main-screen__title {
@@ -487,6 +487,50 @@ body.menu-opened {
   border-left: 1px solid #00FFFB;
 }
 
+.main-rent__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.main-rent__item {
+  width: 100%;
+}
+
+.main-rent__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 450px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.main-rent__descr {
+  margin-bottom: 30px;
+}
+
+.main-rent__btn {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.main-rent__btn:hover {
+  color: #142936;
+}
+
+.main-rent__btn-global {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 1550px) {
   .main-screen__title {
     font-size: 100px;
@@ -515,6 +559,11 @@ body.menu-opened {
   .popular-ex__item-imeges {
     max-width: 800px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 1450px) {
+  .main-rent__img {
+    height: 340px;
   }
 }
 @media (max-width: 1350px) {
@@ -591,10 +640,25 @@ body.menu-opened {
     display: block;
     margin-left: 0;
   }
+  .main-rent__img {
+    height: 260px;
+  }
 }
 @media (max-width: 1100px) {
   .main-screen__title {
     font-size: 64px;
+  }
+  .main-rent__item {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-rent__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 800px) {

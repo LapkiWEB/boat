@@ -256,31 +256,77 @@
   margin-bottom: 30px;
 }
 
-.popular-ex__item-content--right{
+.popular-ex__item-content--right {
   margin-left: 20px;
 }
 
-.popular-ex__btn{
+.popular-ex__btn {
   display: block;
   margin: 0 auto;
 }
+
 // end section popular-ex
 
 // start section adv
-.adv__inner{
+.adv__inner {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.adv__item-title{
+
+.adv__item-title {
   margin-bottom: 15px;
   font-size: 32px;
   @extend %Monts-Light;
 }
-.adv__item{
+
+.adv__item {
   padding-left: 10px;
   border-left: 1px solid $blue;
 }
+
 // end section adv
+
+// start section main-rent
+.main-rent__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.main-rent__item {
+  width: 100%;
+}
+
+.main-rent__img {
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.main-rent__descr {
+  margin-bottom: 30px;
+}
+
+.main-rent__btn {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  color: $white;
+  border-color: $white;
+  &:hover{
+    color: $background;
+  }
+}
+
+.main-rent__btn-global {
+  display: block;
+  margin: 0 auto;
+}
+
+// end section main-rent
 
 @import 'media';
