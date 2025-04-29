@@ -4,7 +4,7 @@ body {
   @extend %Monts-Light;
   //   color: $text;
   position: relative;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   margin: 0 auto;
   font-size: 16px;
   color: $white;
@@ -55,6 +55,8 @@ body.menu-opened {
 
 .section {
   padding: 50px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -62,6 +64,8 @@ body.menu-opened {
   font-size: 60px;
   margin-bottom: 50px;
   max-width: fit-content;
+  // position: relative;
+  // z-index: 10;
 }
 
 
