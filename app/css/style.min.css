@@ -12,7 +12,7 @@ body {
   display: swap;
 }
 
-.title {
+.questions__item-title--text, .title {
   font-family: "Montserrat-Regular", sans-serif;
   font-weight: normal;
   display: swap;
@@ -520,7 +520,7 @@ body.menu-opened {
 .main-rent__btn {
   display: block;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: #1C3748;
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
@@ -617,6 +617,100 @@ body.menu-opened {
   z-index: 1;
 }
 
+.questions__item {
+  padding: 20px 60px;
+  max-width: 1274px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #1C3748;
+  border: 1px solid #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.questions__item.main-btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.questions__item.main-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.questions__wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.questions__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions__item-title--text {
+  position: relative;
+  font-size: 22px;
+}
+
+.questions__item-title--btn.active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.questions__item-title--btn.active .questions__row-1 {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.questions__item-title--btn.active .questions__row-2 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 9px;
+}
+
+.questions__row {
+  height: 3px;
+  width: 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #FFFFFF;
+}
+
+.questions__row-1 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  top: 12px;
+}
+
+.questions__row-2 {
+  position: relative;
+  top: 10px;
+}
+
+.questions__item-text {
+  padding-top: 25px;
+  display: none;
+}
+
+.questions__text-open {
+  display: block;
+}
+
+.questions__btn {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 1550px) {
   .main-screen__title {
     font-size: 100px;
@@ -641,6 +735,9 @@ body.menu-opened {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .popular-ex__item-content--right {
+    margin-left: 0;
   }
   .popular-ex__item-imeges {
     max-width: 800px;
