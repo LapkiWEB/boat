@@ -361,14 +361,21 @@
   .reviews__name {
     font-size: 18px;
   }
- .reviews__images{
-  height: fit-content;
- }
+
+  .reviews__images {
+    height: fit-content;
+  }
+
   .reviews__images img {
     height: 250px;
   }
-  .reviews__slider{
+
+  .reviews__slider {
     padding: 15px;
+  }
+
+  .feedback__wrapper {
+    flex-wrap: wrap;
   }
 }
 

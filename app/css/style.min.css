@@ -937,6 +937,70 @@ body.menu-opened {
   margin-bottom: 20px;
 }
 
+.feedback__title {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.feedback__item {
+  max-width: 465px;
+  width: 100%;
+  margin: 0px 20px;
+}
+
+.feedback__items-input {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  padding: 25px 20px;
+  margin-bottom: 35px;
+  width: 100%;
+  border-radius: 3px;
+}
+.feedback__items-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__items-input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.feedback__items-input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__items-input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__items-input::placeholder {
+  color: #FFFFFF;
+}
+
+.feedback__items-textarea {
+  margin-bottom: 0;
+  height: 178px !important;
+  resize: none;
+}
+
+.feedback__inner-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.feedback__btn {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 1550px) {
   .main-screen__title {
     font-size: 100px;
@@ -1247,6 +1311,10 @@ body.menu-opened {
   }
   .reviews__slider {
     padding: 15px;
+  }
+  .feedback__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 600px) {

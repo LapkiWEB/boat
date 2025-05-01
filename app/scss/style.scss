@@ -520,15 +520,17 @@
 
 
 // start section reviews
-.reviews__wrapper-slider{
+.reviews__wrapper-slider {
   position: relative;
   max-width: 1200px;
   // width: 100%;
   margin: 0 auto;
 }
-.reviews__wrapper{
+
+.reviews__wrapper {
   padding: 0 80px;
 }
+
 .reviews__inner {
   max-width: 970px;
   width: 100%;
@@ -579,6 +581,63 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+
+// start section feedback
+.feedback {
+}
+
+.feedback__title {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.feedback__item {
+  max-width: 465px;
+  width: 100%;
+  margin: 0px 20px;
+}
+
+.feedback__items-input {
+  border: 1px solid $white;
+  background: rgba(255, 255, 255, 0.1);
+  color: $white;
+  padding: 25px 20px;
+  margin-bottom: 35px;
+  width: 100%;
+  // @extend %Monts-Regular;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.feedback__items-textarea {
+  margin-bottom: 0;
+  height: 178px !important;
+  resize: none;
+}
+
+.feedback__inner-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.feedback__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+// end section feedback
 
 // end section reviews
 @import 'media';
