@@ -319,6 +319,12 @@
 }
 
 @media(max-width: 500px) {
+  .individual{
+    margin-bottom: -150px;
+  }
+  .individual__inner{
+    margin-bottom: 0px;
+  }
   .individual__img {
     width: 300px;
     height: 300px;

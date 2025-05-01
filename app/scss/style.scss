@@ -360,8 +360,16 @@
 
 // start section individual
 .individual {
-  // overflow-x: hidden;
+  overflow: hidden;
   // margin-bottom: -1000px;
+  position: relative;
+
+  // height: fit-content;
+  // margin-bottom: 200px;
+  // max-width: 1920px;
+  // width: 100%;
+  // margin: 0 auto;
+  margin-bottom: -500px;
 }
 
 .individual__inner {
@@ -369,7 +377,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-
+  margin-bottom: 450px;
 }
 
 .individual__item {
