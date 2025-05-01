@@ -148,6 +148,7 @@
 .social {
   margin-right: 30px;
   margin-top: 5px;
+
 }
 
 .social__list {
@@ -157,6 +158,14 @@
 
   +.social__list {
     margin-left: 20px;
+  }
+
+  img {
+    transition: all .3s;
+border-radius: 8px;
+    &:hover {
+      box-shadow: 0 0 10px 0 #00fffb;
+    }
   }
 }
 
@@ -664,19 +673,23 @@
 
 .footer__list-link {
   transition: all .3s;
+
   &:hover {
     color: $blue;
   }
 }
-.lapki{
+
+.lapki {
   display: block;
   width: fit-content;
   margin: 0 auto;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     color: $blue;
   }
 }
+
 // end footer
 
 

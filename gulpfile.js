@@ -41,6 +41,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/slick-carousel/slick/slick.min.js',
+    'node_modules/wowjs/dist/wow.min.js',
     'app/js/main.js'
   ])
    .pipe(concat('main.min.js'))
@@ -51,6 +52,7 @@ function scripts() {
 function styles() {
    return src([
      'node_modules/slick-carousel/slick/slick.css',
+     'node_modules/animate.css/animate.min.css',
      'app/scss/style.scss'
    ])
     .pipe(scss())

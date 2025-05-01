@@ -1,4 +1,5 @@
 // WOW JS Конфликтует с оверфлоу хайден на бади или секций
+new WOW().init();
 
 window.onscroll = function showHeader() {
   let header = document.querySelector('.header');
@@ -72,3 +73,5 @@ $(function () {
 
   
 });
+
+
