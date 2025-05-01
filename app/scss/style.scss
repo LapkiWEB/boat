@@ -582,10 +582,8 @@
   margin-bottom: 20px;
 }
 
-
+// end section reviews
 // start section feedback
-.feedback {
-}
 
 .feedback__title {
   text-align: center;
@@ -638,6 +636,48 @@
 }
 
 // end section feedback
+// start footer
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
 
-// end section reviews
+.footer__contacts {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 250px;
+}
+
+.footer__btn {
+  display: block;
+  margin-bottom: 15px;
+  // margin-left: auto;
+}
+
+.footer__list {
+  margin-bottom: 15px;
+}
+
+.footer__list-link {
+  transition: all .3s;
+  &:hover {
+    color: $blue;
+  }
+}
+.lapki{
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  transition: all .3s;
+  &:hover{
+    color: $blue;
+  }
+}
+// end footer
+
+
 @import 'media';

@@ -219,6 +219,18 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__contacts{
+    justify-content: flex-start;
+  // width: 100%;
+  }
+  .footer__logo{
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 
@@ -377,6 +389,11 @@
   .feedback__wrapper {
     flex-wrap: wrap;
   }
+  .footer__contacts{
+    .social{
+      display: block;
+    }
+  }
 }
 
 @media(max-width: 600px) {
@@ -412,6 +429,9 @@
 
   .individual__item {
     margin-bottom: 0;
+  }
+  .footer__inner{
+    justify-content: flex-start;
   }
 }
 
