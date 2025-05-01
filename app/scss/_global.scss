@@ -21,7 +21,7 @@ body.menu-opened {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $background;
+  background-color: $background-item;
   position: relative;
 }
 
@@ -84,4 +84,64 @@ body.menu-opened {
   &:hover {
     background-color: $white;
   }
+}
+
+
+
+
+
+
+
+
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0px;
+  z-index: 1;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  .arrow__wrapper {
+    img {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  button {
+    border: 1px solid $white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 20px 10px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+
+.slick-dots li[class="slick-active"] button {
+  background-color: $white;
 }

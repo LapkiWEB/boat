@@ -43,5 +43,32 @@ $(function () {
 
   }));
 
+  $('.reviews__wrapper').slick({
+    prevArrow: $('.reviews__wrapper-slider .slick-prev'),
+    nextArrow: $('.reviews__wrapper-slider .slick-next'),
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    // fade: true,
+    dots: true,
+    arrows: true,
+    responsive: [{
+      breakpoint: 749,
+      settings: {
+
+        slidesToShow: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 701,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
+    ]
+  });
+
   
 });
