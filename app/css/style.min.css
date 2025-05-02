@@ -4931,6 +4931,63 @@ body.menu-opened {
   height: 100%;
 }
 
+.adv-summer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.adv-summer__item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 100px;
+  max-width: 380px;
+  width: 100%;
+  border: 1px solid;
+  -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 99, 130, 0.9)), to(#1c3748));
+  background: linear-gradient(180deg, rgba(74, 99, 130, 0.9) 0%, #1c3748 100%);
+  border-radius: 5px;
+}
+.adv-summer__item::after {
+  position: absolute;
+  content: "";
+  top: -100px;
+  left: -100px;
+  border: 1px solid #00FFFB;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.adv-summer__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.adv-summer__item-number {
+  background-color: #00FFFB;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  color: #142936;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: -75px;
+  left: 60px;
+}
+
 @media (max-width: 1550px) {
   .main-screen__title {
     font-size: 100px;
@@ -4962,6 +5019,10 @@ body.menu-opened {
   .popular-ex__item-imeges {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .adv-summer__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 1450px) {
@@ -5138,6 +5199,29 @@ body.menu-opened {
   .footer__logo {
     margin-right: auto;
     width: 100%;
+  }
+  .adv-summer__item {
+    max-width: 500px;
+  }
+  .adv-summer__item::after {
+    position: absolute;
+    content: "";
+    top: -75px;
+    left: -75px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+  }
+  .adv-summer__item-number {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    top: -50px;
+    left: 50px;
+  }
+  .adv-summer__title {
+    font-size: 24px;
   }
 }
 @media (max-width: 900px) {
@@ -5348,6 +5432,15 @@ body.menu-opened {
   .summer-excurs__images img {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .adv-summer__inner {
+    margin-top: 100px;
+  }
+  .adv-summer__title {
+    font-size: 20px;
+  }
+  .adv-summer__item {
+    margin-bottom: 75px;
   }
 }
 @media (max-width: 500px) {

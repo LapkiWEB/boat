@@ -761,7 +761,8 @@
   // padding-top: 40px;
   // padding: 50% 0;
 }
-.summer-excurs__text{
+
+.summer-excurs__text {
   // width: 70%;
   width: 380px;
   margin-bottom: 30px;
@@ -783,10 +784,10 @@
 .summer-excurs__images {
   width: 75%;
   height: 650px;
-  margin-left: auto ;
-right: 0;
-top: 0;
-bottom: 0;
+  margin-left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
   position: relative;
   z-index: 2;
 
@@ -812,5 +813,60 @@ bottom: 0;
 }
 
 // end section summer-excurs
+
+// start section adv-summer
+.adv-summer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.adv-summer__item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 100px;
+  max-width: 380px;
+  width: 100%;
+  border: 1px solid;
+  // backdrop-filter: blur(10px);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, rgba(74, 99, 130, 0.9) 0%, #1c3748 100%);
+  border-radius: 5px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -100px;
+    left: -100px;
+    border: 1px solid $blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+}
+
+.adv-summer__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.adv-summer__item-number {
+  background-color: $blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  color: $background;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: -75px;
+  left: 60px;
+}
+
+// end section adv-summer
 
 @import 'media';

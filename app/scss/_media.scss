@@ -35,6 +35,10 @@
     max-width: 800px;
     margin: 0 auto;
   }
+
+  .adv-summer__inner {
+    justify-content: space-around;
+  }
 }
 
 @media(max-width: 1450px) {
@@ -243,6 +247,33 @@
   .footer__logo {
     margin-right: auto;
     width: 100%;
+  }
+
+  .adv-summer__item {
+    max-width: 500px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -75px;
+      left: -75px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      z-index: -1;
+    }
+  }
+
+  .adv-summer__item-number {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    top: -50px;
+    left: 50px;
+  }
+
+  .adv-summer__title {
+    font-size: 24px;
   }
 }
 
@@ -505,6 +536,15 @@
     img {
       object-fit: contain;
     }
+  }
+  .adv-summer__inner{
+    margin-top: 100px;
+  }
+  .adv-summer__title{
+    font-size: 20px;
+  }
+  .adv-summer__item{
+    margin-bottom: 75px;
   }
 }
 
