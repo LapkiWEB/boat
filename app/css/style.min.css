@@ -4047,6 +4047,78 @@ body.menu-opened {
   background-color: #FFFFFF;
 }
 
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(25, 43, 68, 0.9);
+  display: none;
+}
+
+.modal__inner {
+  width: 100%;
+}
+
+.modal__wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal__title {
+  position: relative;
+}
+
+.close__btn {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: #FFFFFF;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
 @font-face {
   font-family: "Montserrat-Black";
   src: url("../fonts/Montserrat-Black.eot");
@@ -4083,6 +4155,26 @@ body.menu-opened {
   top: 40px;
   left: 0;
   right: 0;
+}
+.header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#1c3748), color-stop(50%, #00fffb), to(#1c3748));
+  background: linear-gradient(90deg, #1c3748 0%, #00fffb 50%, #1c3748 100%);
+}
+.header::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#1c3748), color-stop(50%, #00fffb), to(#1c3748));
+  background: linear-gradient(90deg, #1c3748 0%, #00fffb 50%, #1c3748 100%);
 }
 
 .header__fixed {
@@ -4124,6 +4216,7 @@ body.menu-opened {
 }
 .header__logo img {
   position: absolute;
+  z-index: 1;
   top: -5px;
   width: 62px;
   height: 70px;

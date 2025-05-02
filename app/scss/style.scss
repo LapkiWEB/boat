@@ -13,6 +13,26 @@
   top: 40px;
   left: 0;
   right: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    @include border;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    @include border;
+  }
 }
 
 
@@ -49,6 +69,7 @@
 
   img {
     position: absolute;
+    z-index: 1;
     top: -5px;
     width: 62px;
     height: 70px;
@@ -162,7 +183,8 @@
 
   img {
     transition: all .3s;
-border-radius: 8px;
+    border-radius: 8px;
+
     &:hover {
       box-shadow: 0 0 10px 0 #00fffb;
     }
