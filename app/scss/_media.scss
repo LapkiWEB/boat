@@ -177,6 +177,16 @@
   .main-rent__img {
     height: 260px;
   }
+
+  .summer-screen {
+    &::after {
+      top: 100px;
+    }
+  }
+
+  .summer-excurs__title {
+    font-size: 48px;
+  }
 }
 
 @media(max-width: 1100px) {
@@ -219,15 +229,18 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .footer__inner{
+
+  .footer__inner {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .footer__contacts{
+
+  .footer__contacts {
     justify-content: flex-start;
-  // width: 100%;
+    // width: 100%;
   }
-  .footer__logo{
+
+  .footer__logo {
     margin-right: auto;
     width: 100%;
   }
@@ -271,6 +284,36 @@
       right: -320px;
     }
   }
+
+  .summer-excurs__content {
+    padding-top: 0;
+    position: static;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .summer-excurs__title {
+    font-size: 40px;
+  }
+
+  .summer-excurs__text {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .summer-excurs__images {
+    width: 100%;
+    height: 300px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .summer-excurs__btn {
+    margin: 0 auto;
+  }
 }
 
 
@@ -298,7 +341,8 @@
     }
   }
 
-  .popular-ex__item-content-number {
+  .popular-ex__item-content-number,
+  .summer-excurs__number {
     font-size: 96px;
   }
 
@@ -389,8 +433,9 @@
   .feedback__wrapper {
     flex-wrap: wrap;
   }
-  .footer__contacts{
-    .social{
+
+  .footer__contacts {
+    .social {
       display: block;
     }
   }
@@ -423,15 +468,43 @@
     font-size: 48px;
   }
 
-  .popular-ex__item-content-number {
+  .popular-ex__item-content-number,
+  .summer-excurs__number {
     font-size: 64px;
   }
 
   .individual__item {
     margin-bottom: 0;
   }
-  .footer__inner{
+
+  .footer__inner {
     justify-content: flex-start;
+  }
+
+  .summer-excurs__content {
+    text-align: left;
+  }
+
+  .summer-excurs__text {
+    margin: inherit;
+    max-width: 100%;
+  }
+
+  .summer-excurs__number {
+    margin-bottom: 0px;
+  }
+
+  .summer-excurs__btn {
+    margin: inherit;
+  }
+
+  .summer-excurs__images {
+    // height: 250px;
+    height: auto;
+
+    img {
+      object-fit: contain;
+    }
   }
 }
 
